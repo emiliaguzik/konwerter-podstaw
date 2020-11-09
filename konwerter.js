@@ -1,4 +1,4 @@
-const zbierzDane = () => {
+const zbierz = () => {
     const liczba1 = document.getElementById("numer1").value;
     const liczba2 = document.getElementById("numer2").value;
     const poczatkowaPodstawa = document.getElementById("poczatkowapodstawa").value;
@@ -28,7 +28,8 @@ const zbierzDane = () => {
     return parseInt(wynik, 10).toString(zmienionaPodstawa);
   };
   const zwrot = () => {
-    const zbierzDane = zbierzDane();
+    console.log (zbierz());
+    const zbierzDane = zbierz();
     const podstawa10 = konwersjaDoPodstawy(zbierzDane);
     const dodać = dodawanie(podstawa10);
     const konwersjaPodstawy = konwersjaPodstawyDoWprowadzone(dodać, zbierzDane);
