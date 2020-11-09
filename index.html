@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Konwerter podstawa</title>
+  </head>
+  <body>
+      
+        <input
+          type="text"
+          id="numer1"
+          placeholder="Numer 1"
+          autocomplete="off"
+        />
+        <input
+          type="text"
+          id="numer2"
+          placeholder="Numer 2"
+          autocomplete="off"
+        />
+        <input
+          type="text"
+          id="poczatkowaPodstawa"
+          placeholder="poczatkowa podstawa"
+          autocomplete="off"
+        />
+        <input
+          type="text"
+          id="zmienionaPodstawa"
+          placeholder="zmieniona podstawa"
+          autocomplete="off"
+        />
+        <button id="button" onclick="zwrot()">
+          <span>Konwerter</span>
+        </button>
+        <p id="wynik"></p>
+    
+    <script src="konwerter.js"></script>
+  </body>
+</html>
