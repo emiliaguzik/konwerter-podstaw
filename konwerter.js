@@ -1,4 +1,4 @@
-function zbierzDane ()  {
+const zbierzDane = () => {
     const liczba1 = document.getElementById("numer1").value;
     const liczba2 = document.getElementById("numer2").value;
     const poczatkowaPodstawa = document.getElementById("poczatkowapodstawa").value;
@@ -6,7 +6,7 @@ function zbierzDane ()  {
     return { liczba1, liczba2, poczatkowaPodstawa, zmienionaPodstawa };
   };
   
-  function konwersjaDoPodstawy ({ liczba1, liczba2, poczatkowaPodstawa, zmienionaPodstawa }) {
+   const konwersjaDoPodstawy = ({ liczba1, liczba2, poczatkowaPodstawa, zmienionaPodstawa }) => {
     if (
       poczatkowaPodstawa < 2 ||
       zmienionaPodstawa < 2 ||
@@ -20,14 +20,14 @@ function zbierzDane ()  {
     return { pierwszynr, druginr };
   };
   
-  function dodawanie ({ pierwszynr, druginr })  {
+  const dodawanie = ({ pierwszynr, druginr }) => {
     const wynik = +pierwszynr + +druginr;
     return wynik;
   };
-  function konwersjaPodstawyDoWprowadzone (wynik, { zmienionaPodstawa }) {
+  const konwersjaPodstawyDoWprowadzone = (wynik, { zmienionaPodstawa }) => {
     return parseInt(wynik, 10).toString(zmienionaPodstawa);
   };
-  function zwrot () {
+  const zwrot = () => {
     const zbierzDane = zbierzDane();
     const podstawa10 = konwersjaDoPodstawy(zbierzDane);
     const dodać = dodawanie(podstawa10);
